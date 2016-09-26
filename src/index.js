@@ -22,5 +22,7 @@ module.exports = function (pluginConfig, {commits}, cb) {
     return true
   })
 
+  if (!type) type = 'minor'
+
   cb(null, type)
 }
